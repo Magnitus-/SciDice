@@ -1,4 +1,3 @@
-#! /usr/bin/python
 """
 Copyright (c) 2014 Eric Vallee <eric_vallee2003@yahoo.ca>
 
@@ -20,17 +19,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
-from SciDice import Dice
+from distutils.core import setup
 
-if __name__=='__main__':
-    Rolls = None
-    while True:
-        Input = raw_input("Dices> ")
-        if str.lower(Input) in ("exit", "q", "quit"):
-            exit()
-        try:
-            if Rolls == None or Input!="":
-                Rolls = Dice(Input)
-            print(str(Rolls.GenerateRolls()))
-        except ValueError as Error:
-            print(Error.message)
+setup(name='SciDice',
+      version='1.0',
+      description='Virtual dice rolling package',
+      author='Eric Vallee',
+      author_email='eric_vallee2003@yahoo.ca',
+      url='https://github.com/Magnitus-/SciDice',
+      licence='MIT License',
+      packages=['SciDice'],
+      platforms='Any on which numpy/scipy can be installed',
+      scripts=['SciDiceScript'])

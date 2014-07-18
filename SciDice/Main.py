@@ -38,7 +38,7 @@ class Dice(object):
     |-> ':<<Amount>|><Amount>': If present, Amount is an integer indicating the number of dice to keep. If preceded by ':>', the top <Amount> dice 
     |   will be kept and if preceded by ':<', the bottom <Amount> dice will be kept. Result will be a sorted array.
     |
-    |-> By default, each potential die value X has as their cdf the area (X-1,X) under u(0,<Faces>).
+    |-> By default, each potential die value X has as their pdf the area (X-1,X) under u(0,<Faces>).
     |
     |-> '~n(<NormalMean>,<NormalSD>)|~n(<NormalSD>)':  If present, the cdf used will be a domain-adjusted (ie, 0 to <Faces>) variant of 
     |   n(<NormalMean>,<NormalSD>), with <NormalMean> defaulting to <Faces>/2 if omitted.
