@@ -21,11 +21,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 from SciDice import Dice
+import sys
+
+if sys.version_info.major==2:
+    UserInput = raw_input
+else:
+    UserInput = input
 
 if __name__=='__main__':
     Rolls = None
     while True:
-        Input = raw_input("Dices> ")
+        Input = UserInput("Dices> ")
         if str.lower(Input) in ("exit", "q", "quit"):
             exit()
         try:
