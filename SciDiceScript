@@ -31,7 +31,7 @@ else:
 if __name__=='__main__':
     Rolls = None
     while True:
-        Input = UserInput("Dices> ")
+        Input = UserInput("SciDice> ")
         if str.lower(Input) in ("exit", "q", "quit"):
             exit()
         try:
