@@ -31,14 +31,18 @@ How To Use The Package In Your code
 
 Make sure the package is installed if you want the example below to run it anywhere without tweaking.
 
+```python
 import SciDice
 Test = SciDice.Dice(<FormatString>)
 Rolls = Test.GenerateRolls()
+```
 
 For the format string, you can look at the unit test scripts for examples or if you are running ipython, you can type the following in your interpreter:
 
+```python
 import SciDice
 SciDice.Dice?
+```
 
 How To Use The Command Line Script
 ==================================
