@@ -60,3 +60,16 @@ Additionally, after you typed in a format string, you can just hit enter subsequ
 To quit, you can type 'q', 'quit' or 'exit'.
 
 I plan to add facilities with arguments to run the unit tests from the script in the future.
+
+Using It With Docker
+====================
+
+There is now a magnitus/scidice:1.0.0 image with the library pre-installed.
+
+The default behavior of the image is to launch the interactive command line script.
+
+It can be used by typing:
+
+```
+docker run -it --rm magnitus/scidice:1.0.0
+```

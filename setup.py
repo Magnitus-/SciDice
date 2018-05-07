@@ -22,10 +22,10 @@ THE SOFTWARE.
 from distutils.core import setup
 
 setup(name='SciDice',
-      version='1.0',
+      version='1.0.0',
       description='Virtual dice rolling package',
       author='Eric Vallee',
-      author_email='eric_vallee2003@yahoo.ca',
+      author_email='eric_vallee@webificservices.com',
       url='https://github.com/Magnitus-/SciDice',
       licence='MIT License',
       packages=['SciDice'],
